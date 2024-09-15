@@ -1,5 +1,9 @@
+from constants import Action
 import os
 import shutil
+
+def say_hello():
+    print("Hello 😎")
 
 def move_items_to_parent_and_cleanup():
     root_path = input("Please enter path to folder: ")
@@ -23,7 +27,29 @@ def move_items_to_parent_and_cleanup():
                     print(f"Removed {folder_path}")
 
 def main():
-    move_items_to_parent_and_cleanup()
+    actions = {
+        Action.SAY_HELLO: say_hello,
+        Action.MOVE_AND_CLEANUP: move_items_to_parent_and_cleanup
+    }
+    print("Select an action: ")
+    for action in actions:
+        print(f"{action.value}: {action.name}")
+    print()
+
+    try:
+        choice = int(input("Enter Choice: "))
+        action = Action(choice)
+    except ValueError:
+        print("Invalid input, Please enter a number")
+        return
+    except KeyError:
+        print("Invalid action, Please select a valid option")
+        return
+
+    if action in actions:
+        actions[action]()
+    else:
+        print("Invalid action")
 
 if __name__ == '__main__':
     main()
