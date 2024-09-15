@@ -36,12 +36,12 @@ To use any of the scripts in this repository, follow these steps:
 
 ## Scripts
 
-### 1. `say_hello`
+### say_hello
 
 - **Purpose:** A simple function that prints a greeting message to the console.
 - **Usage:** Run this function to display a message saying "Hello 😎".
-  
-### 2. `move_items_to_parent_and_cleanup`
+
+### move_items_to_parent_and_cleanup
 
 - **Purpose:** Moves items from subfolders to their parent folder and deletes the empty subfolders afterward.
 - **Usage:** Provide the path to the root folder, and the script will move the contents from each subfolder into its parent folder.
@@ -72,6 +72,13 @@ To use any of the scripts in this repository, follow these steps:
      │   ├── file4.txt
      │   ├── file5.txt
      ```
+
+This will make sure that when you click on a link in the Table of Contents, it will take you to the corresponding section in your document.
+
+
+
+
+
 
 ## Contributing
 As this repository is for personal use, contributions are not expected. However, feel free to check it out and make suggestions if you find something interesting!
