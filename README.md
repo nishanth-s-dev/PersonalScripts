@@ -1,4 +1,4 @@
-# PersonalScripts
+# PersonalScripts 🚀
 
 Welcome to **PersonalScripts**, a collection of Python scripts designed to simplify day-to-day development tasks, boost productivity, and eliminate repetitive work. This repository is continually updated as I add new scripts for personal use.
 
